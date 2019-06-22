@@ -1,0 +1,25 @@
+package circle;
+
+import java.util.Scanner;
+import java.lang.Math;
+/**
+ *
+ * @author DELL
+ */
+public class Circle {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double r,peri,area;
+        System.out.println("Enter the radius of the circle:");
+        Scanner s= new Scanner(System.in);
+        r= s.nextInt();
+        peri=(2*3.14*r);
+        area=(Math.PI*r*r);
+        System.out.println("The perimeter is " + peri + " cm");
+        System.out.println("The area is " + area + " sq.cm");
+    }
+    
+}
