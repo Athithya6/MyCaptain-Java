@@ -1,0 +1,25 @@
+package inches.to.metres;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class InchesToMetres {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double n,q;
+        System.out.println("Enter the value in inches");
+        Scanner s=new Scanner(System.in);
+        n=s.nextDouble();
+        System.out.println("The value in inches is:"+ n);
+        q=(0.0254*n);
+        System.out.println("The value in metres is:"+q);
+    }
+    
+}
