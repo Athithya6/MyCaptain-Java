@@ -1,0 +1,30 @@
+package binaryadd1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class Binaryadd1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Enter the two binary numbers");
+        String a=new String();
+        String b=new String();
+        String f=new String();
+        Scanner s=new Scanner(System.in);
+        a=s.nextLine();
+        b=s.nextLine();
+        int c=Integer.parseInt(a,2);
+        int d=Integer.parseInt(b,2);
+        int e=c+d;
+        f=Integer.toBinaryString(e);
+        System.out.println("The sum of the two binary strings is: "+f);
+    }
+    
+}
