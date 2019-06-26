@@ -1,0 +1,27 @@
+package minutes;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class Minutes {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         int inmin,years,days;
+         System.out.println("Enter the number of minutes");
+         Scanner s=new Scanner(System.in);
+         inmin=s.nextInt();
+         years=inmin/525600;
+         days=(inmin/1440)%365;
+         System.out.println(inmin+ " minutes is approximately " + years + " years and " + days + " days");
+         
+         
+    }
+    
+}
