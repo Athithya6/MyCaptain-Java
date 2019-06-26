@@ -1,0 +1,41 @@
+package vowels;
+
+import java.util.Scanner;
+
+
+
+
+
+/**
+ *
+ * @author DELL
+ */
+public class Vowels {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int i,count1=0,count2=0;
+        char ch;
+        System.out.println("Enter the word");
+        String word=new String();
+        String wordlower=new String();
+        Scanner s=new Scanner(System.in);
+        word=s.nextLine();
+        wordlower=word.toLowerCase();
+        for(i=0;i<word.length();i++) {
+         ch=wordlower.charAt(i);
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') {
+            count1++;
+        }
+        else if(ch>'a'&&ch<'z') {
+            count2++;
+        }
+        }
+        System.out.println("The no.of vowels in the word is:"+ count1);
+        System.out.println("The no.of consonants in the word is:"+ count2);
+        
+       }
+       }
+    
